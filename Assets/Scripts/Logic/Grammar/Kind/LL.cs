@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LL
 {
-    public static bool Belong ( string grammar )
+    public static bool Belong ( GenericGrammar grammar )
     {
         //Checkgrammar
         throw new NotImplementedException ( "Belong no se ha implementado" );

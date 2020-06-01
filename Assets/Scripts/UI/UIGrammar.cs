@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UI : MonoBehaviour
+public class UIGrammar : MonoBehaviour
 {
     #region Singlenton
-    public static UI instance;
+    public static UIGrammar instance;
 
     private void Awake ()
     {
@@ -15,7 +15,10 @@ public class UI : MonoBehaviour
     }
     #endregion
 
-
+    public GameObject[]productions;
+    public int actualProduction;
+    
+    
     public GameObject windowGrammar;
     public GameObject windowConfirmationGrammar;
 
@@ -31,18 +34,15 @@ public class UI : MonoBehaviour
     public Text resultHilera;
     private void Start ()
     {
+        GameEvent.instance.OnAddProduction += EnableProduction;
         actualWindow = windowGrammar;
+        actualProduction = 0;
     }
-    public void ReadGrammar ( InputField inputGrammar )
-    {
-        
-      
-        Controller.instance.CheckGrammar ( inputGrammar.text );
-    }
+   
 
     public void ReadHilera ( InputField inputHilera )
     {
-        Controller.instance.CheckHilera ( inputHilera.text );
+        GrammarController.instance.CheckHilera ( inputHilera.text );
     }
 
     public void GetAnswerGrammar ( bool ans )
@@ -84,5 +84,18 @@ public class UI : MonoBehaviour
         actualWindow.SetActive ( false );
         next.SetActive ( true );
         actualWindow = next;
+    }
+
+    public void EnableProduction(string value) {
+        productions [actualProduction].gameObject.SetActive ( true );
+        productions [actualProduction].transform.GetChild ( 0 ).GetComponent<Text> ().text = value;
+       
+        actualProduction++;
+        Enable ( windowGrammar );
+    
+    }
+
+    public void IdentifyGrammar () {
+        GrammarController.instance.CheckGrammar ();
     }
 }
