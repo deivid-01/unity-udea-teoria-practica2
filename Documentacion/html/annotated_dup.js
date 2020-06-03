@@ -1,0 +1,28 @@
+var annotated_dup =
+[
+    [ "DoxygenConfig", "class_doxygen_config.html", "class_doxygen_config" ],
+    [ "DoxygenWindow", "class_doxygen_window.html", "class_doxygen_window" ],
+    [ "DoxyRunner", "class_doxy_runner.html", "class_doxy_runner" ],
+    [ "DoxyThreadSafeOutput", "class_doxy_thread_safe_output.html", "class_doxy_thread_safe_output" ],
+    [ "Element", "class_element.html", "class_element" ],
+    [ "GameEvent", "class_game_event.html", "class_game_event" ],
+    [ "GenericGrammar", "class_generic_grammar.html", "class_generic_grammar" ],
+    [ "GrammarController", "class_grammar_controller.html", "class_grammar_controller" ],
+    [ "GrammarTools", "class_grammar_tools.html", "class_grammar_tools" ],
+    [ "GrammarToolsTest", "class_grammar_tools_test.html", "class_grammar_tools_test" ],
+    [ "InstructionsController", "class_instructions_controller.html", "class_instructions_controller" ],
+    [ "LL", "class_l_l.html", "class_l_l" ],
+    [ "LL_StackAutomat", "class_l_l___stack_automat.html", "class_l_l___stack_automat" ],
+    [ "LLTest", "class_l_l_test.html", "class_l_l_test" ],
+    [ "Production", "class_production.html", "class_production" ],
+    [ "ProductionController", "class_production_controller.html", "class_production_controller" ],
+    [ "Q", "class_q.html", "class_q" ],
+    [ "Q_StackAutomat", "class_q___stack_automat.html", "class_q___stack_automat" ],
+    [ "QTest", "class_q_test.html", "class_q_test" ],
+    [ "S", "class_s.html", "class_s" ],
+    [ "S_StackAutomat", "class_s___stack_automat.html", "class_s___stack_automat" ],
+    [ "Set", "class_set.html", "class_set" ],
+    [ "STest", "class_s_test.html", "class_s_test" ],
+    [ "UIGrammar", "class_u_i_grammar.html", "class_u_i_grammar" ],
+    [ "UIProduction", "class_u_i_production.html", "class_u_i_production" ]
+];
