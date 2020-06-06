@@ -1,4 +1,0 @@
-var dir_f00c279959241963065137b3fc38b397 =
-[
-    [ "Grammar", "dir_8d439154268a10961dfc4207fb8ea54b.html", "dir_8d439154268a10961dfc4207fb8ea54b" ]
-];

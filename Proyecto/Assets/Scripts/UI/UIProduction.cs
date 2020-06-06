@@ -95,6 +95,7 @@ public class UIProduction : MonoBehaviour
 
     public void EnableComponnets () {
         goRighSide.SetActive ( true );
+        btnAddNull.SetActive ( true );
         if ( rightSide.text.Length >= 1 )
         {
             btnDone.SetActive ( true );

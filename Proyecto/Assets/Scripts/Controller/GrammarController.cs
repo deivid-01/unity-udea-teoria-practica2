@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -86,6 +87,8 @@ public class GrammarController : MonoBehaviour
         SceneManager.LoadScene ( SceneManager.GetActiveScene ().buildIndex );
     }
 
-   
-
+    public  static void Goodbye ()
+    {
+        Debug.Log ( "!bye" );
+    }
 }

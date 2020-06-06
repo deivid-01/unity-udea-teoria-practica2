@@ -121,6 +121,7 @@ public class UIGrammar : MonoBehaviour
     }
 
     public void Exit () {
+        GrammarController.Goodbye ();
         Application.Quit ();
     }
 
