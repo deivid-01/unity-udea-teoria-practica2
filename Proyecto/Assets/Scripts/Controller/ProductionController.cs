@@ -120,5 +120,10 @@ public class ProductionController : MonoBehaviour
         production = new Production ();
         UIProduction.instance.ResetUIProduction ();
     }
+
+    public  static void AddNullProduction ()
+    {
+        production.rightSide.Add ( new Element ( Element.Kind.nulo , 'λ' ) );
+    }
 }
  

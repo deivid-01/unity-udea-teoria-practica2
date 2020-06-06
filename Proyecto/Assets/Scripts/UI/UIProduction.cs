@@ -40,7 +40,9 @@ public class UIProduction : MonoBehaviour
     public GameObject windowNoTerminal;
 
 
-    public GameObject btnAddLeftSide; 
+    public GameObject btnAddLeftSide;
+
+    public GameObject btnAddNull;
 
     #endregion
 
@@ -64,6 +66,13 @@ public class UIProduction : MonoBehaviour
 
     private void Update ()
     {
+        if ( rightSide.text.Length > 0 )
+        {
+            btnDone.SetActive ( true );
+            btnAddNull.SetActive ( false );
+
+        }
+
         if ( leftSide.text.Length > 0 )
         {
             btnReset.SetActive ( true );
@@ -116,6 +125,8 @@ public class UIProduction : MonoBehaviour
             ProductionController.CheckNoTerminal ( inputField.text );
         }
 
+       
+
         inputField.text = "";
 
     }
@@ -153,6 +164,7 @@ public class UIProduction : MonoBehaviour
     {
         leftSide.text = "";
         rightSide.text = "";
+        btnAddNull.SetActive ( true );
         btnAddLeftSide.SetActive ( true );
         goRighSide.SetActive ( false );
         btnReset.SetActive ( false );
@@ -177,5 +189,12 @@ public class UIProduction : MonoBehaviour
         windowError.SetActive ( true );
         yield return new WaitForSeconds ( 1.5f );
         windowError.SetActive ( false );
+    }
+
+    public void AddNull () {
+        goRighSide.SetActive ( false );
+        rightSide.text = "λ";
+        ProductionController.AddNullProduction ( );
+
     }
 }
